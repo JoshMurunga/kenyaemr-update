@@ -52,7 +52,7 @@ echo "download complete"
 echo
 echo
 
-unzip /home/vagrant/latest.zip /home/vagrant/latest
+unzip /home/vagrant/latest.zip -d /home/vagrant/latest
 
 echo "extraction complete"
 echo
