@@ -46,7 +46,7 @@ echo "completed setup of auto-update rollback mechanism"
 echo
 echo
 
-wget https://github.com/JoshMurunga/kenyaemr-update/releases/download/v1/latest.zip /home/vagrant/
+wget -P /home/vagrant/ https://github.com/JoshMurunga/kenyaemr-update/releases/download/v1/latest.zip
 
 echo "download complete"
 echo
