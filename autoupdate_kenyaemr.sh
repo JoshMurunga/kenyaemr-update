@@ -76,6 +76,16 @@ fi
 echo "Upgrading to The Latest KenyaEMR"
 sudo bash /home/vagrant/latest/latest/setup_script.sh
 
+if [ -f "/home/vagrant/latest/latest/post_upgrade_script.sh" ] 
+then
+echo
+
+read -p "Press enter if you have entered the MFL to run post installation"
+
+sudo bash /home/vagrant/latest/latest/post_upgrade_script.sh
+
+fi
+
 echo
 echo "Upgrade complete"
 echo
