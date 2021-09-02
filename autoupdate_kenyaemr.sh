@@ -28,6 +28,16 @@ then
 sudo rm -R "/opt/KenyaEMRAutoupdate/rollback/db"
 fi
 
+if [ -d "/home/vagrant/latest" ] 
+then 
+sudo rm -R "/home/vagrant/latest"
+fi
+
+if [ -f "/home/vagrant/latest.zip" ] 
+then 
+sudo rm -rf "/home/vagrant/latest.zip"
+fi
+
 sudo mkdir -p "/opt/KenyaEMRAutoupdate/rollback/webapp"
 sudo mkdir -p "/opt/KenyaEMRAutoupdate/rollback/modules"
 sudo mkdir -p "/opt/KenyaEMRAutoupdate/rollback/db"
